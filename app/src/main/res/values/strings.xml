@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Conserta Aqui</string>
+    <string name="email_hint">Email</string>
+    <string name="senha_hint">Senha</string>
+    <string name="login_button_text">LOGIN</string>
+    <string name="ainda_n_cadastrado">Ainda não é cadastrado? Cadastre-se!</string>
+    <string name="esqueceu_senha">Esqueceu sua senha?</string>
+    <string name="profile">Perfil</string>
+    <string name="busca">Busca</string>
+    <string name="Home">Inicio</string>
+    <string name="acquired">Pedidos</string>
+</resources>
