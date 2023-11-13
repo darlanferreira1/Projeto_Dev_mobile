@@ -5,10 +5,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
-import com.example.projeto_mobile.Data.ToyBox
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.projeto_mobile.Others.Adapter
 import com.example.projeto_mobile.databinding.FragmentInicioBinding
-import com.example.projeto_mobile.R
 
 
 class InicioFragment : Fragment() {
@@ -24,15 +23,16 @@ class InicioFragment : Fragment() {
 
     ): View? {
         _binding = FragmentInicioBinding.inflate(inflater, container, false)
-        val tvToyName = binding.tvToyNames
-        val toyNames = ToyBox.getToyNames()
-        toyNames.forEach {
-            tvToyName.append("${it}\n\n\n")
-        }
+        initReclycerView()
         return binding.root
     }
 
 
+    private fun initReclycerView(){
+        binding.recyclerSellers.layoutManager = LinearLayoutManager(context)
+        binding.recyclerSellers.setHasFixedSize(true) /*gera melhor performance na recycler view*/
+        binding.recyclerSellers.adapter = Adapter()
+    }
 
     override fun onDestroyView() {
         super.onDestroyView()

@@ -13,8 +13,8 @@ import com.example.projeto_mobile.R
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
-    private lateinit var navHostFragment: NavHostFragment
     private lateinit var navControler: NavController
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun initNavigation(){
-        navHostFragment = supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
+        val navHostFragment = supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
         navControler = navHostFragment.navController
         NavigationUI.setupWithNavController(binding.bottomNavigation,navControler)
     }
