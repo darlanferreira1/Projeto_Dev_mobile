@@ -17,6 +17,7 @@
         android:background="@color/white"
         android:padding="8dp"
         android:layout_marginHorizontal="16dp"
+
         />
 
     <EditText
