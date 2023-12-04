@@ -8,22 +8,22 @@
 
     <fragment
         android:id="@+id/page_home"
-        android:name="com.example.projeto_mobile.fragments.InicioFragment"
+        android:name="com.example.projeto_mobile.mainFragments.InicioFragment"
         android:label="fragment_inicio"
         tools:layout="@layout/fragment_inicio" />
     <fragment
         android:id="@+id/page_search"
-        android:name="com.example.projeto_mobile.fragments.BuscaFragment"
+        android:name="com.example.projeto_mobile.mainFragments.BuscaFragment"
         android:label="fragment_busca"
         tools:layout="@layout/fragment_busca" />
     <fragment
         android:id="@+id/page_acquired"
-        android:name="com.example.projeto_mobile.fragments.PedidosFragment"
+        android:name="com.example.projeto_mobile.mainFragments.PedidosFragment"
         android:label="fragment_pedidos"
         tools:layout="@layout/fragment_pedidos" />
     <fragment
         android:id="@+id/page_profile"
-        android:name="com.example.projeto_mobile.fragments.PerfilFragment"
+        android:name="com.example.projeto_mobile.mainFragments.PerfilFragment"
         android:label="fragment_perfil"
         tools:layout="@layout/fragment_perfil" />
 </navigation>

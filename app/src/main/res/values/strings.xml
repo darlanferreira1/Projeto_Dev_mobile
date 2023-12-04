@@ -9,4 +9,6 @@
     <string name="busca">Busca</string>
     <string name="Home">Inicio</string>
     <string name="acquired">Pedidos</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
